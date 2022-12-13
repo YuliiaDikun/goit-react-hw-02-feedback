@@ -1,0 +1,9 @@
+.title {
+    font-size: 25px;
+}
+.btnList {
+    margin: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
