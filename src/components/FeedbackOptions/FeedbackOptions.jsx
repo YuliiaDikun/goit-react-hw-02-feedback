@@ -1,5 +1,5 @@
 import css from './FeedbackOptions.module.css';
-
+import PropTypes from "prop-types";
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   const optionsBtn = Object.keys(options);
   const emojiOption = {
@@ -19,3 +19,8 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     </ul>
   );
 };
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.objectOf(PropTypes.number),
+  onLeaveFeedback: PropTypes.func
+}
