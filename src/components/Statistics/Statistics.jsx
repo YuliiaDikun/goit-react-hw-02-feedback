@@ -9,11 +9,11 @@ export const Statistics = ({ good, neutral, bad, total, positive }) => {
           <p className={css.item}>Good: {good}</p>
           <p className={css.item}>Neutral: {neutral}</p>
           <p className={css.item}>Bad: {bad}</p>
-          <p className={css.item}>Total: {total}</p>
-          <p className={css.item}>Positive feedback: {positive}%</p>
+          <p className={css.total}>Total: {total} { '✔'}</p>
+          <p className={css.persent}>Positive feedback: {positive}% { '💕'}</p>
         </>
       ) : (
-        <Notification message="There is no feedback"/>
+        <Notification message="There is no feedback...😒"/>
       )}
     </div>
   );
