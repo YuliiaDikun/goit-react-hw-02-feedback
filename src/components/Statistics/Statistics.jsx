@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { Notification } from 'components/Notification/Notification';
 import css from './Statistics.module.css';
 export const Statistics = ({ good, neutral, bad, total, positive }) => {
   return (
@@ -16,9 +15,7 @@ export const Statistics = ({ good, neutral, bad, total, positive }) => {
         </p>
         <p className={css.persent}>
         Positive feedback: {positive}% {'💕'}
-        </p> 
-      
-     
+        </p>    
     </div>
   );
 };
